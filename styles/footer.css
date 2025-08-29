@@ -189,7 +189,7 @@ footer{
     }
     .footer-bs{
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
     }
     .footer-bs p{
         font-size: 0.75rem;
