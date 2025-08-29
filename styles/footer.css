@@ -187,7 +187,10 @@ footer{
     .pp-ts a{
         font-size: 0.75rem;
     }
-
+    .footer-bs{
+        flex-direction: row;
+        gap: 10px;
+    }
     .footer-bs p{
         font-size: 0.75rem;
     }
