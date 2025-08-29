@@ -80,7 +80,7 @@ footer{
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .contact-rs div ul{
@@ -88,7 +88,7 @@ footer{
 }
 
 .contact-rs div h6{
-    font-size: 0.97rem;
+    font-size: 0.9rem;
     font-family: var(--expletus-sans);
     font-weight: 600;
     color: var(--color-text-third);
@@ -96,7 +96,7 @@ footer{
 }
 
 .contact-rs div ul li a{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: var(--ibm-plex-sans);
     font-weight: 300;
     color: var(--color-text-primary);
