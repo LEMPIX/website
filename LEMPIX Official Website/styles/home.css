@@ -1,0 +1,149 @@
+/* Main 
+-------- */
+header{
+  padding-top: 50px;
+  background-image: url("../assets/images/intro_bg.png");
+  background-repeat: no-repeat;   
+  background-size: 100% 800px;    
+  background-position: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 40px;
+  height: 800px;
+}
+
+/* Right iimage on the intro */
+.header-right{
+  width: 50%;
+  min-width: 350px;
+  height: fit-content;
+  margin-right: 20px;
+  margin-top: -40px;
+  max-width: 700px;
+  align-self: center;
+}
+
+h3{
+  font-family: var(--expletus-sans);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  letter-spacing: 1px;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.header-left{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  padding-right: 20px;
+  padding-left: 0px;
+  /* background-color: green; */
+  /* padding-bottom: 40px; */
+  margin-bottom: 100px;
+}
+
+/* Logo on the left side */
+.header-left img{
+  margin-top: 20px;
+  width: clamp(200px, 70%, 70%);
+}
+
+.header-left p{
+  font-size: 0.85rem;
+  color: var(--color-text-secondary-lighter);
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+.services-link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* inner background */
+  background: linear-gradient(to top left,
+              rgba(255, 255, 255, 0.6),
+              rgba(255, 255, 255, 0.3));
+
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+
+  font-family: var(--expletus-sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#about{
+  height: 100vh;
+}
+
+
+@media (max-width: 1000px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .header-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 7% 20px 6% 7%;
+  }
+
+  .header-right{
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: -40px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  header{
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    flex-direction: column;
+    height: 900px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .header-left{
+    width: 100%;
+    padding: 0 10% 0% 10%;
+    align-items: start;
+    margin-top: 60px;
+  }
+
+  .header-right{
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    padding: 5px;
+    margin-top: -60px;
+    justify-content: start;
+    align-items: center;
+    /* background-color: green; */
+  }
+
+  .header-left img{
+    width: clamp(150px, 60%, 60%);
+  }
+
+  .header-left h3{
+    /* width: 15rem; */
+    font-size: 1.4rem;
+  }
+}

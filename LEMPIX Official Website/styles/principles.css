@@ -1,0 +1,56 @@
+#principles{
+    background-image: url("../assets/images/principles_bg.png");
+    background-repeat: no-repeat;   
+    background-size: 100% 800px;    
+    background-position: start;   
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    scroll-margin-top: 50px;
+}
+
+.principles-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12%;
+    margin-top: 30px;
+}
+
+.principles-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principles-card img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.principles-card p{
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    #principles{
+        height: fit-content;
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 690px) {
+    #principles{
+        height: fit-content;
+        margin-bottom: 0px;
+    }
+    .principles-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

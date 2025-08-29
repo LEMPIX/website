@@ -1,0 +1,215 @@
+/* Nav Section
+--------------- */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  margin: 10px 5% 0 5%;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-self: right;
+  align-items: center;
+}
+
+.logo{
+  height: 4rem;
+  width: auto;
+  /* background-color: #00FF25; */
+}
+
+nav, .nav-links, .download-button {
+  font-family: var(--inria-sans);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links li a {
+  position: relative;
+  z-index: 1;
+  padding: 10px; /* Keep this consistent */
+  /* transition: background 0.3s ease; */
+}
+
+.nav-links li a:hover {
+  color: white;
+  padding: 10px 0;
+  margin: 0 10px;
+  /* border-radius: 5px; */
+  font-family: var(--inria-sans);
+  font-size: 1rem;
+  border-bottom: 1.5px solid white;
+}
+
+.nav-links li a.active {
+  color: white;
+  padding: 10px 0;
+  margin: 0 10px;
+  margin-top: -10px;
+  /* border-radius: 5px; */
+  font-family: var(--inria-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+
+.nav-links li a.active:hover {
+  box-shadow: none;
+  background-color: transparent;
+  transform: none;
+}
+
+
+/* Hide hamburger by default, show on mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--clr-dark, #222);
+  z-index: 1100;
+  color: var(--color-background);
+  size: 20px;
+  margin-right: 15px;
+}
+
+/* Responsive nav: burger menu */
+@media (max-width: 860px) {
+  .nav-links {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 0;
+      background: rgba(255,255,255,0.95);
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem;
+      width: 60%;
+      max-width: 300px;
+      height: 100vh;
+      box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 1000;
+  }
+  .nav-links.active {
+      display: flex;
+  }
+  .hamburger {
+      display: block;
+  }
+}
+
+/* @media (max-width: 1200px) {
+  .nav-container {
+    gap: 10vw;
+  }
+} */
+
+@media (max-width: 850px) {
+  .nav-container {
+      gap: 0;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+}
+
+/* Navbar background on scroll */
+nav.scrolled {
+  background: rgba(255,255,255,0.9) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  /* transition: background 0.3s; */
+}
+
+/* .download-button {
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  color: white !important;
+  padding: 10px 27px;
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(255, 193, 7, 0.6);
+}
+ */
+
+
+
+/* Nav menu for burger menu */
+.menu-popup {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.menu-popup.active {
+  display: flex;
+}
+
+.menu-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-content li {
+  margin: 20px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-background);
+}

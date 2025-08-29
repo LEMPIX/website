@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES */
+:root {
+  --color-background: #F8FAFC;
+  --color-primary: #0043EB;
+  --color-secondary: #7DF9FF;
+  --color-third: #5ac6ed;
+  /* --color-third-compl: #00FF25; */
+  --color-fourth: #0AACC6;
+  --color-fourth-compl: #00DCFF;
+
+  --color-text-primary: #4B5563;
+  --color-text-secondary: #F8FAFC;
+  --color-text-third: #1C1C1E;
+  --color-text-secondary-lighter: hsla(210, 40%, 98%, 0.85); /* CC = 80% opacity */
+  
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --trans: all 0.3s ease-in-out;
+
+  --ibm-plex-sans: "IBM Plex Sans", sans-serif;
+  --expletus-sans: "Expletus Sans", sans-serif;
+  /* --nuninto-sans: "Nunito Sans", sans-serif; */
+  --br: 15px;
+
+  --spnning-time: 150s;
+  --bubbles-spacing: 230px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-text-secondary);
+}
+
+h1{
+  font-family: var(--expletus-sans);
+  font-size: 2.1rem;
+  font-weight: 600;
+  background: linear-gradient(to bottom right, #077FE1, #013D6E); /* your gradient */
+  -webkit-background-clip: text; /* Chrome, Safari, Edge */
+  background-clip: text;         /* Firefox / future-proof */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari, Edge */
+  color: transparent;                     /* Firefox */
+}
+
+
+
+h4{
+  font-family: var(--expletus-sans);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(to bottom right, #077FE1, #013D6E); /* your gradient */
+  -webkit-background-clip: text; /* Chrome, Safari, Edge */
+  background-clip: text;         /* Firefox / future-proof */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari, Edge */
+  color: transparent;
+}
+
+h5{
+  font-family: var(--expletus-sans);
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: linear-gradient(to bottom right, #077FE1, #013D6E); /* your gradient */
+  -webkit-background-clip: text; /* Chrome, Safari, Edge */
+  background-clip: text;         /* Firefox / future-proof */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari, Edge */
+  color: transparent;
+}
+
+.title{
+  margin: 0 6% 30px 6%;
+}
+
+.sub-title{
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.underline{
+  height: 2px;
+  background: linear-gradient(0deg, #077FE1, #013D6E);
+  margin-top: 15px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 6%;
+}
+
+.title h1{
+  margin-bottom: 15px;
+}
+
+.text-content{
+  font-family: var(--ibm-plex-sans);
+  font-size: 0.92rem;
+  color: var(--color-text-primary);
+  /* line-height: 1.8; */
+}
+
+.standard-btn{
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+  color: white !important;
+  padding: 12px 33px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: var(--expletus-sans);
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+body {
+  font-family: var(--ibm-plex-sans);
+  background-color: var(--color-background);
+}
