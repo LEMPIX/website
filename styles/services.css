@@ -162,5 +162,7 @@
       width: 100%;
       margin: 0;
       order: 2;
+      justify-content: space-evenly;
+      padding: 0 10%;
     }
 }
