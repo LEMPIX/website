@@ -1,7 +1,7 @@
 {
-    "appdir":{
-        "app1": "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=drive_link",
-        "app2": "https",
-        "app3": "hhtps"
-    }
+    "apps":[
+        {"name": "planix", "image": "", "ratings":5.0, "genres":["organization", "self-improvement"], "dir": "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=drive_link"},
+        {"name": "app2", "image": "", "ratings":5.0, "genres":["organization", "self-improvement"], "dir": "https"},
+        {"name": "app3", "image": "", "ratings":5.0, "genres":["organization", "self-improvement"], "dir": "https"}
+    ]
 }
