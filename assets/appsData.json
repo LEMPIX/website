@@ -10,7 +10,26 @@
         "dir": "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=drive_link",
         "size": 20,
         "price": 0
-      }
+      },
+      {
+          "name": "planix",
+          "icon": "assets/icons/planixT.svg",
+          "rating": 0,
+          "topics": ["organization", "self-improvement"],
+          "dir":
+              "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=drive_link",
+          "size": 20,
+          "price": 0
+        },
+        {
+          "name": "noteIt",
+          "icon": "assets/icons/noteitT.svg",
+          "rating": 5.0,
+          "topics": ["organization", "self-improvement"],
+          "dir": "https",
+          "size": 15,
+          "price": 0
+        }
     ],
     
     [
