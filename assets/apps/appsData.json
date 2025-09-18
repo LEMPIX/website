@@ -4,7 +4,7 @@
     [
       {
         "name": "planix",
-        "icon": "https://raw.githubusercontent.com/LEMPIX/website/refs/heads/main/assets/appsIcons/planix.svg",
+        "icon": "https://raw.githubusercontent.com/LEMPIX/website/refs/heads/main/assets/apps/appsIcons/planix.svg",
         "rating": 5.0,
         "topics": ["organization", "self-improvement"],
         "dir": "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=drive_link",
@@ -13,7 +13,7 @@
       },
       {
         "name": "noteIt",
-        "icon": "https://raw.githubusercontent.com/LEMPIX/website/refs/heads/main/assets/appsIcons/noteit.svg",
+        "icon": "https://raw.githubusercontent.com/LEMPIX/website/refs/heads/main/assets/apps/appsIcons/noteit.svg",
         "rating": 5.0,
         "topics": ["note taking", "memo"],
         "dir": "https",
@@ -25,7 +25,7 @@
     [
       {
         "name": "planix",
-        "icon": "https://raw.githubusercontent.com/LEMPIX/website/refs/heads/main/assets/appsIcons/noteit.svg",
+        "icon": "https://raw.githubusercontent.com/LEMPIX/website/refs/heads/main/assets/apps/appsIcons/planix.svg",
         "rating": 5.0,
         "topics": ["organization", "self-improvement"],
         "dir": "https://drive.google.com/file/d/1bikyv98H0D-jMIlrtNRDV8Knx9QAvwrQ/view?usp=drive_link",
